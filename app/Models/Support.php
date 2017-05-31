@@ -43,7 +43,7 @@ class Support extends Model
      */
     public static $rules = [
         'name' => 'required|max:30|min:5',
-        'phone' => 'required|digits_between:10,15|numeric',
+        'phone' => 'required|min:10|max:15|regex:/(0)[0-9]{9}/',
         'email' => 'required|email'
     ];
     

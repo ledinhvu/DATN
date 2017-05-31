@@ -7,28 +7,17 @@
 
 		<div id="da-slider" class="da-slider">
 			<div class="da-slide">
-				<h2>Twitter Bootstrap</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="img/parallax-slider/twitter.png" alt="image01" /></div>
+				<h2 style="font-family:tahoma">Trung tâm Olympia</h2>
+				<p style="font-family:tahoma">NGOẠI NGỮ QUỐC TẾ OLYMPIA ĐÀO TẠO TIẾNG ANH VỚI 100% GIÁO VIÊN NƯỚC NGOÀI CHO CÁC LỨA TUỔI VÀ TRÌNH ĐỘ</p>
+				<div class="da-img"><img style="height:320px" src="http://localhost:8080/olympia/public/frontend/img/parallax-slider/slide1.png" alt="image01" /></div>
 			</div>
 			<div class="da-slide">
-				<h2>Responsive Design</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="img/parallax-slider/responsive.png" alt="image02" /></div>
-			</div>
-			<div class="da-slide">
-				<h2>HTML5</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="img/parallax-slider/html5.png" alt="image03" /></div>
-			</div>
-			<div class="da-slide">
-				<h2>CSS3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="img/parallax-slider/css3.png" alt="image04" /></div>
+				<h2 style="font-family:tahoma">Những khóa học</h2>
+				<p style="font-family:tahoma">+ Tiếng Anh cho các cháu từ 3 - 22 tuổi;<br />
+					+ Tiếng Anh giao tiếp, Du học, XKLĐ, DN...<br />
+					+ Luyện thi: HSG, IELTS, TOEIC, B1, B2, C1...<br />
+					+ Lớp tiếng Anh đặc biệt 1 thầy – 1 trò.</p>
+				<div class="da-img"><img style="height:320px" src="http://localhost:8080/olympia/public/frontend/img/parallax-slider/slide2.png" alt="image02" /></div>
 			</div>
 			<nav class="da-arrows">
 				<span class="da-arrows-prev"></span>
@@ -46,12 +35,7 @@
     	<div class="container">
 	
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
-      		<div class="hero-unit">
-        		<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-        		<p><a class="btn btn-success btn-large">Learn more &raquo;</a></p>
-      		</div>
+      		
 			<!-- end: Hero Unit -->
 
       		<!-- start: Row -->

@@ -25,9 +25,13 @@ Route::get('course', 'Frontend\HomeOlympiaController@showCourse')->middleware('s
 
 Route::resource('login1', 'Frontend\LoginController');
 
+Route::get('management', 'Frontend\ManagerController@directional')->middleware('student')->name('management');;
+
 Route::get('managerCourse/{id}', 'Frontend\ManagerController@show')->middleware('student')->name('viewCourse');
 
 Route::get('learn/{id}', 'Frontend\ManagerController@viewLearn')->middleware('student')->name('viewLearn');
+
+Route::get('detail', 'Frontend\ManagerController@detailStudent')->middleware('student')->name('detailStudent');
 
 Route::get('lesson/{id_lesson}', 'Frontend\ManagerController@viewLesson')->middleware('student')->name('viewLesson');
 
@@ -39,11 +43,19 @@ Route::get('transaction', 'Frontend\ManagerController@learn')->middleware('stude
 
 Route::get('learn', 'Frontend\ManagerController@learnEnglish')->middleware('student')->name('learnEnglish');
 
+Route::get('feed', 'Frontend\ManagerController@feedback')->middleware('student')->name('feedback');
+
 Route::post('back', 'Frontend\ManagerController@comeBack')->middleware('student')->name('comeback');
 
 Route::get('logout1', 'Frontend\LoginController@logout')->name('logout1');
 
 Route::resource('register1', 'Frontend\RegisterController');
+
+Route::resource('feedback1', 'Frontend\FeedbackController');
+
+// Route::resource('editdetail', 'Frontend\StudentController');
+
+Route::resource('editdetail', 'Frontend\StudentController');
 
 Route::get('catalog/{category}', ['as' => 'catalog.filter', 'uses' => 'Frontend\CatalogsController@filter']);
 

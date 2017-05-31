@@ -31,7 +31,7 @@ class Event extends Model
      */
     protected $casts = [
         'title' => 'string',
-        'content' => 'string'
+        'content' => 'longtext'
     ];
 
     /**

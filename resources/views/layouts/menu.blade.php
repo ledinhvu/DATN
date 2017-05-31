@@ -34,10 +34,6 @@
     <a href="{!! route('news.index') !!}"><i class="fa fa-newspaper-o"></i><span>News</span></a>
 </li>
 
-<li class="{{ Request::is('images*') ? 'active' : '' }}">
-    <a href="{!! route('images.index') !!}"><i class="fa fa-picture-o"></i><span>Images</span></a>
-</li>
-
 <li class="{{ Request::is('teachers*') ? 'active' : '' }}">
     <a href="{!! route('teachers.index') !!}"><i class="fa fa-user"></i><span>Teachers</span></a>
 </li>

@@ -53,5 +53,4 @@ class Student extends Model
         'address' => 'required|min:3|max:50'
     ];
 
-    
 }

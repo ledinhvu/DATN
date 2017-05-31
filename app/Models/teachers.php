@@ -47,7 +47,7 @@ class teachers extends Model
      */
     public static $rules = [
         'name' => 'required|min:3|max:30',
-        'phone' => 'required|digits_between:10,15|numeric',
+        'phone' => 'required|min:10|max:15|regex:/(0)[0-9]{9}/',
         'email' => 'required|email',
         'address' => 'required|min:3|max:50'
     ];

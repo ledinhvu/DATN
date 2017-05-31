@@ -33,8 +33,8 @@ class UserController extends AppBaseController
     {
         $this->userRepository->pushCriteria(new RequestCriteria($request));
         $users = $this->userRepository->all();
-        
-        return view('backend.users.index', compact('users'));
+        $currentUserId = $request->user()->id;
+        return view('backend.users.index', compact('users', 'currentUserId'));
     }
 
     /**

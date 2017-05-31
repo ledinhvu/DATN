@@ -16,7 +16,15 @@
 	<a href="{{ route('event.index') }}">Event</a>
 </li>
 <li class="{{ Request::is('register1*') ? 'active' : '' }}">
+	@if(!Session::has('users'))
 	<a href="{{ route('register1.index') }}">Register</a>
+	@endif
+</li>
+
+<li class="{{ Request::is('management*') ? 'active' : '' }}">
+	@if(Session::has('users'))
+	<a href="{{ route('management') }}">Quản lý</a>
+	@endif
 </li>
 <li class="{{ Request::is('login1*') || Request::is('logout1*')? 'active' : '' }}">
 	@if(Session::has('users'))  

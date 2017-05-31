@@ -99,7 +99,7 @@ class ManagerController extends AppBaseController
     {
         $view_learn = DB::table('lesson_menu')
             ->join('lessons', 'lesson_menu.id_lesson', '=', 'lessons.id')
-            ->where('id_menu','=', $id)->get();
+            ->where('id_menu','=', $id)->orderBy('name', 'asc')->get();
         if (empty($view_learn)) {
             Flash::error('Không có bài học nào');
             return view('frontend.manager.learnEng');
@@ -115,5 +115,23 @@ class ManagerController extends AppBaseController
             return view('frontend.manager.viewLearn');
         }
         return view('frontend.manager.viewLesson')->with('lesson', $lesson);
+    }
+
+    public function feedback(Request $request)
+    {
+        return view('frontend.manager.feedback');
+    }
+
+    public function directional(Request $request)
+    {
+        return new RedirectResponse(url('course'));
+    }
+
+    public function detailStudent(Request $request)
+    {
+        $detailStudent = $request->session()->get('users');
+        $studentID = $detailStudent->id;
+        $studentDetail = DB::table('students')->where('id','=', $studentID)->get();
+        return view('frontend.manager.detailStudent')->with('studentDetail', $studentDetail);
     }
 }

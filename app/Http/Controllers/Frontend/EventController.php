@@ -29,7 +29,7 @@ class EventController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $event = $this->eventRepository->all()->first();
+        $event = $this->eventRepository->all()->last();
 
         $events = $this->eventRepository->all();
 

@@ -45,7 +45,7 @@
 						@foreach($menus as $menu)
 							<li>
 								<a href="{{ route('viewCourse', $menu->id) }}" style="text-decoration: none">{{ $menu->name }}</a>
-								<p>{!! Util::theExcerpt($menu->description, 100) !!}</p><br />
+								<p>{!! Util::theExcerpt($menu->description, 150) !!}</p><br />
 							</li>
 						@endforeach
 						</ul>
@@ -73,7 +73,9 @@
                                                 <ul class="title">
                                                   <li><a href="{{ route('viewRegister') }}" style="text-decoration: none">- Các khóa học đã đăng ký</a></li>
 												  <li><a href="{{ route('learnEnglish') }}" style="text-decoration: none">- Các khóa đang học</a></li>
-												  <li><a href="" style="text-decoration: none">- Các khóa đã hoàn thành</a></li>
+												  <li><a href="{{ route('feedback') }}" style="text-decoration: none">- Gửi phản hồi </a></li>
+												  <li><a href="{{ route('detailStudent') }}" style="text-decoration: none">- Quản lý tài khoản </a></li>
+												  <!--<li><a href="" style="text-decoration: none">- Thông tin của tôi</a></li>-->
                                                 </ul>
                                             </div>
 											<div class="testimonials-bg"></div>
